@@ -45,10 +45,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 pt-32 flex items-center relative overflow-x-hidden"
+      className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 pt-32 pb-24 relative"
     >
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-x-hidden">
+      <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-600 rounded-full blur-3xl opacity-20 animate-blob"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-500 rounded-full blur-3xl opacity-15 animate-blob" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-red-500 rounded-full blur-3xl opacity-10 animate-blob" style={{ animationDelay: '4s' }}></div>
@@ -58,7 +58,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="slide-up">
-            <div className="inline-block mb-6 sm:mb-8 glass px-4 sm:px-6 py-2 sm:py-3 rounded-full backdrop-blur-md group hover-lift">
+            <div className="inline-block mb-4 sm:mb-6 glass px-4 sm:px-6 py-2 sm:py-3 rounded-full backdrop-blur-md group hover-lift">
               <span className="text-red-400 font-bold text-xs sm:text-sm flex items-center gap-2">
                 <Shield size={16} className="text-orange-500" />
                 Trusted Safety Solutions
@@ -120,7 +120,7 @@ export default function Hero() {
                 onMouseEnter={createPowderParticles}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-orange-600 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-300 glow-pulse"></div>
-                <div className="relative w-full h-full bg-gradient-to-b from-red-600 to-red-700 rounded-3xl shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-x-hidden border-2 border-red-500/30 group-hover:extinguisher-active flex flex-col items-center justify-start pt-2">
+                <div className="relative w-full h-full bg-gradient-to-b from-red-600 to-red-700 rounded-3xl shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-hidden border-2 border-red-500/30 group-hover:extinguisher-active flex flex-col items-center justify-start pt-2">
                   {/* Top Cap/Valve */}
                   <div className="w-8 sm:w-10 h-4 sm:h-6 bg-gradient-to-b from-yellow-400 to-yellow-600 rounded-t-lg shadow-lg mb-1"></div>
                   
@@ -163,9 +163,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-1 h-8 bg-gradient-to-b from-red-500 to-transparent rounded-full"></div>
-      </div>
+    
     </section>
   );
 }

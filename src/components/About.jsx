@@ -11,12 +11,9 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-32 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-red-600 rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-blob"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-500 rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-blob" style={{ animationDelay: '3s' }}></div>
-      </div>
+     
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
@@ -35,10 +32,10 @@ export default function About() {
         {/* About Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-20">
           <div className="slide-up">
-            <p className="text-base sm:text-lg text-gray-300 mb-6 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-300 mb-4 leading-relaxed">
               SureSafe Fire Safety Solutions is a trusted supplier and service provider of certified fire safety equipment. We specialize in supplying, installing, and maintaining fire protection systems for residential, commercial, and industrial properties.
             </p>
-            <p className="text-base sm:text-lg text-gray-300 mb-6 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-300 mb-4 leading-relaxed">
               With over a decade of experience, we have become the preferred choice for thousands of satisfied customers across India. Our commitment to quality, professionalism, and customer satisfaction is unmatched.
             </p>
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
